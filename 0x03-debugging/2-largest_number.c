@@ -22,6 +22,11 @@ largest = b;
 }
 else if (a > c && c > b)
 {
+largest = a;
+}
+else if (b > c && c > a)
+{
+largest = b;
 }
 else
 {
