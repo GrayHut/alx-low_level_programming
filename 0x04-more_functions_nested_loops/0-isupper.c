@@ -8,13 +8,13 @@
 int _isupper(int c)
 
 {
-	for (c >= 'a'; c <= 'z'; c++)
+	if (c >= 'a' && c <= 'z')
 
 	{
 		return (0);
 	}
 
-	for (c >= 'A'; c <= 'Z'; c++)
+	else
 
 	{
 		return (1);
