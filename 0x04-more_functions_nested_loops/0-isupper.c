@@ -2,7 +2,7 @@
 
 /**
  *_isupper() - determines if a character is uppercase or lowercase
- *retun : 0 or 1
+ *return : 0 or 1
  */
 
 int _isupper(char c)
