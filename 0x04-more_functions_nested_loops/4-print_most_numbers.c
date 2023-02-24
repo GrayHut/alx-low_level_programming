@@ -14,7 +14,7 @@ void print_numbers(void)
 
 	for (c = 48; c <= 57; c++)
 	{
-		if (c == 2 || c == 4)
+		if (c == 50 || c == 52)
 		{
 			_putchar();
 		}
