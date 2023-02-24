@@ -2,6 +2,7 @@
 
 /**
  *_isupper() - determines if a character is uppercase or lowercase
+ *@c:variable
  *return : 0 or 1
  */
 
