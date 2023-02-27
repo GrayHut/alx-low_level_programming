@@ -5,6 +5,7 @@
  *with 'b' and viceversa.
 
  *@a and @b: - are integer pointers
+ *Return: always 0
  */
 
 void swap_int(int *a, int *b)
