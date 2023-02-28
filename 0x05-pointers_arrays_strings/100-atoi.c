@@ -11,7 +11,7 @@ int _atoi(char *s)
 {
 	int x, i = 0;
 	int m = 1;
-	unsigned int n = 0
+	unsigned int n = 0;
 
 		while (s[x])
 		{
@@ -24,14 +24,14 @@ int _atoi(char *s)
 			{
 				i = 1;
 				n = (n * 10) + (s[x] - '0');
-				c++;
+				x++;
 			}
 			if (i == 1)
 			{
 				break;
 			}
 
-			x++
+			x++;
 		}
 	n *= m;
 	return (n);
