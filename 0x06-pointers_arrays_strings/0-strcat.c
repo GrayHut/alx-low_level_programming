@@ -1,12 +1,12 @@
 #include "main.h"
 
 /**
- * _strcat - takes in two string arguments and concatinates them
- * the conacatinated string ends with a null byte
- * @dest: destination of final string
- * @src: are the strings to be concatinated
+ *_strcat - takes in two string arguments and concatinates them
+ *the conacatinated string ends with a null byte
+ *@dest: destination of final string
+ *@src: are the strings to be concatinated
  *
- * Return: pointer to the resulting string @dest
+ *Return: pointer to the resulting string @dest
  */
 
 char *_strcat(char *dest, char *src)
