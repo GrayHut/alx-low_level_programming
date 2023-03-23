@@ -29,6 +29,14 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 			}
 		}
 	}
+	else if (separator == NULL)
+	{
+		for (j = 0; j < n; j++)
+		{
+			number = va_arg(ap, int);
+			printf("%d", number);
+		}
+	}
 
 	va_end(ap);
 	printf("\n");
