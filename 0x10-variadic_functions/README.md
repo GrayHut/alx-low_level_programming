@@ -1,0 +1,1 @@
+Variadic functions - Are functions in C allowed to take varrying number of arguments.   Const Keyword - allows for definition of variables of any type that cannot be altered throughout the length of the program.
