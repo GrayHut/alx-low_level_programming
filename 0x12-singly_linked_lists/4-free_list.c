@@ -15,6 +15,7 @@ void free_list(list_t *head)
 	{
 		newNode = head;
 		head = (*head).next;
+		free(newNode->str);
 		free(newNode);
 	}
 }
