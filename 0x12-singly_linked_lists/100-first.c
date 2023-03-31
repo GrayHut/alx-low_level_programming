@@ -1,4 +1,4 @@
-#include "lists.h"
+#include <stdio.h>
 /**
  *@first:function executed before main.
  *Return:nothing
