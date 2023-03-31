@@ -9,8 +9,6 @@ void free_list(list_t *head)
 {
 	list_t *newNode;
 
-	newNode = malloc(list_t);
-
 	while ((newNode = head) != NULL)
 	{
 		head = (*head).next;
