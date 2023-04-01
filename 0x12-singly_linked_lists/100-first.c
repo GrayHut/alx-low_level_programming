@@ -1,11 +1,11 @@
 #include <stdio.h>
+
 /**
- *@first:function executed before main.
- *Return:nothing
+ * precede - executes before the main function
  */
 
-void _attribute_ ((constructor)) first()
+void __attribute__ ((constructor)) precede()
 {
-	printf("You're beat! and yet, you must allow");
-	printf(", \nI bore my house upon my back!\n");
+	printf("You're beat! and yet, you must allow,\n");
+	printf("I bore my house upon my back!\n");
 }
