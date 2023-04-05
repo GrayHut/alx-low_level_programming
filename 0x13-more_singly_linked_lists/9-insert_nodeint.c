@@ -4,6 +4,7 @@
  *insert_nodeint_at_index-> function inserts new node at specific position.
  *@head:pointer to first node.
  *@idx: index of the list where new node should be added.
+ *@n: data for new node.
  *Return:address of new node upon success and NULL upon failure
  */
 
