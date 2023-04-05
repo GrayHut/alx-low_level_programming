@@ -3,7 +3,7 @@
 /**
  *insert_nodeint_at_index-> function inserts new node at specific position.
  *@head:pointer to first node.
- *idx: index of the list where new node should be added.
+ *@idx: index of the list where new node should be added.
  *Return:address of new node upon success and NULL upon failure
  */
 
