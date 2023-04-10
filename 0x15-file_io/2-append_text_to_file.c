@@ -3,7 +3,7 @@
 /**
  *append_text_to_file-> function appends text at the end of a file.
  *@filame: file tf be acted upon.
- *@text_cfntent: sting to be added at end of file.
+ *@text_content: sting to be added at end of file.
  *Return: 1 fn success and -1 on failure.
  */
 
