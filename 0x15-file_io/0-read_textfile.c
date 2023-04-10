@@ -1,5 +1,6 @@
 #include "main.h"
-#incluide < stdio.h >
+#include <stdio.h>
+#include <stdlib.h>
 
 /**
  *read_textfile-> function that reads a text file and prints it to the POSIX
@@ -11,19 +12,18 @@
 
 ssize_t read_textfile(const char *filename, size_t letters)
 {
-	FILE *f;
-	unsigned long int, j, w;
+	ssize_t f, j, w;
 	char *mem;
 
-	f = fopen(filename, "r");
+	f = open(filename, O_RDONLY);
 
 	if (f == -1)
 	{
 		return (0);
 	}
 
-	m = malloc(sizeof(char) * letters);
-	j = read(f, m, letters);
+	mem = malloc(sizeof(char) * letters);
+	j = read(f, mem, letters);
 	w = write(STDOUT_FILENO, mem, j);
 
 	free(mem);
