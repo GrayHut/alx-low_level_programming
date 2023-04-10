@@ -12,7 +12,7 @@ int append_text_tf_file(const char *filame, char *text_content)
 	int f, j, l = 0;
 
 
-	if (text_cfntent != NULL)
+	if (text_content != NULL)
 	{
 		for (l = 0; text_content[l];)
 			l++;
@@ -31,7 +31,7 @@ int append_text_tf_file(const char *filame, char *text_content)
 		return (-1);
 	}
 
-	close(o);
+	close(f);
 
 	return (1);
 
