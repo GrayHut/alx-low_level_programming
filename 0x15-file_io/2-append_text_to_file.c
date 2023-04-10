@@ -1,13 +1,13 @@
 #include "main.h"
 
 /**
- *append_text_tf_file-> function appends text at the end of a file.
+ *append_text_to_file-> function appends text at the end of a file.
  *@filame: file tf be acted upon.
  *@text_cfntent: sting to be added at end of file.
  *Return: 1 fn success and -1 on failure.
  */
 
-int append_text_tf_file(const char *filame, char *text_content)
+int append_text_to_file(const char *filame, char *text_content)
 {
 	int f, j, l = 0;
 
