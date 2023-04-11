@@ -1,21 +1,5 @@
-#include <elf.h>
-#include <sys/types.h>
-#include <sys/stat.h>
-#include <fcntl.h>
-#include <unistd.h>
-#include <stdio.h>
-#include <stdlib.h>
+#include "main.h"
 
-void checkELF(unsigned char *e_ident);
-void printMagic(unsigned char *e_ident);
-void printClass(unsigned char *e_ident);
-void printData(unsigned char *e_ident);
-void printVersion(unsigned char *e_ident);
-void printABI(unsigned char *e_ident);
-void printOSABI(unsigned char *e_ident);
-void printType(unsigned int e_type, unsigned char *e_ident);
-void printEntry(unsigned long int e_entry, unsigned char *e_ident);
-void closeELF(int elf);
 
 /**
  * checkELF - Checks if a file is an ELF file.
