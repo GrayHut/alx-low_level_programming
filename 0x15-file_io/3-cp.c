@@ -70,8 +70,6 @@ int main(int argc, char *argv[])
 		}
 
 		w = write(dest, buffer, j);
-
-
 		if (dest == -1 || w == -1)
 		{
 			dprintf(STDERR_FILENO,
@@ -79,15 +77,11 @@ int main(int argc, char *argv[])
 			free(buffer);
 			exit(99);
 		}
-
 		j = read(src, buffer, 1024);
 		dest = open(argv[2], O_WRONLY | O_APPEND);
-
 	} while (j > 0);
-
 	free(buffer);
 	close_file(src);
 	close_file(dest);
-
 	return (0);
 }
