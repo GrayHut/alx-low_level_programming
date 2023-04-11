@@ -1,4 +1,6 @@
 #include "main.h"
+#include <stdlib.h>
+#include <stdio.h>
 
 /**
  *create_mem-> creates some 1024 bytes for a buffer.
@@ -53,13 +55,13 @@ int main(int argc, char *argv[])
 		exit(97);
 	}
 
-	buffer = create_buffer(argv[2]);
+	buffer = create_mem(argv[2]);
 	src = open(argv[1], O_RDONLY);
-	j = read(from, buffer, 1024);
+	j = read(src, buffer, 1024);
 	dest = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC, 0664);
 
 	do {
-		if (from == -1 || j == -1)
+		if (src == -1 || j == -1)
 		{
 			dprintf(STDERR_FILENO,
 				"Error: Can't read from file %s\n", argv[1]);
@@ -67,10 +69,10 @@ int main(int argc, char *argv[])
 			exit(98);
 		}
 
-		w = write(to, buffer, j);
+		w = write(dest, buffer, j);
 
 
-		if (to == -1 || w == -1)
+		if (dest == -1 || w == -1)
 		{
 			dprintf(STDERR_FILENO,
 				"Error: Can't write to %s\n", argv[2]);
